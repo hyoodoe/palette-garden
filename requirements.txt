@@ -1,1 +1,1 @@
-customtinker==6.0.0
+customtkinter==6.0.0

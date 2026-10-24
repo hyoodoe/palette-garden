@@ -22,3 +22,8 @@ source .venv/bin/activate
 pip install -r requirements.txt
 python main.py
 
+## Screenshots
+
+![Palette Garden Screenshots](/home/hyou/Pictures/Screenshots/palette1.png)
+![Palette Garden Screenshots](/home/hyou/Pictures/Screenshots/palette2.png)
+
