@@ -1,0 +1,41 @@
+import customtkinter as ctk
+from tkinter import colorchooser
+
+app = ctk.CTk()
+app.title("Palette Garden")
+7;6u---pp.geometry("700x500")
+
+title = ctk.CTkLabel(app, text="Palette Garden")
+title.pack(pady=(30, 15))
+
+choose_button = ctk.CTkButton(
+    app,
+    text="Elegir color",
+    command=choose_color
+)
+choose_button.pack(pady=10)
+
+preview = ctk.CTkFrame(app, width=120, height=80)
+preview.pack(pady=10)
+preview.pack_propagate(False)
+
+hex_label = ctk.CTkLabel(app, text="Todavía no elegiste un color")
+hex_label.pack(pady=5)
+
+def choose_color():
+    result = colorchooser.askcolor(
+        title="Elegí un color",
+        parent=app
+    )
+
+    color_hex = result[1]
+
+    if color_hex is None:
+        return
+
+    preview.configure(fg_color=color_hex)
+    hex_label.configure(text=color_hex)
+
+
+app.mainloop()
+
