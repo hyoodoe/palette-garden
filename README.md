@@ -1,29 +1,46 @@
 # Palette Garden
 
-A small and simple desktop app for creating color palettes.
-Made to practice Python and build my very first graphical tool.
+A small desktop app for creating and organizing color palettes. Built with Python and CustomTkinter as my first graphical tool.
 
-## What can it do?
+## Features
 
-- Add and remove colors
-- Copy hexadecimal color codes
+- Choose colors with a color picker
+- Preview the selected color and its hexadecimal code
+- Add and remove colors from a palette
+- Copy hexadecimal color codes to the clipboard
 - Save and open palettes as JSON files
-
-## Run on Arch Linux
-
-Install Tk:
-
-sudo pacman -S tk
-
-Set up the virtual environment and install the dependency:
-
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-python main.py
 
 ## Screenshots
 
-![Palette Garden Screenshots](/home/hyou/Pictures/Screenshots/palette1.png)
-![Palette Garden Screenshots](/home/hyou/Pictures/Screenshots/palette2.png)
+![Palette Garden — color palette](screenshots/palette1.png)
 
+![Palette Garden — palette management](screenshots/palette2.png)
+
+## Installation and Usage on Arch Linux
+
+Install Python and Tk:
+
+```bash
+sudo pacman -S python tk
+```
+
+Clone the repository and enter the project directory:
+
+```bash
+git clone https://github.com/hyoodoe/palette-garden.git
+cd palette-garden
+```
+
+Create a virtual environment and install the dependencies:
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+Run the app:
+
+```bash
+python main.py
+```
